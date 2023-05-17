@@ -1,5 +1,5 @@
 #nome do workflow
-name: meu primeiro workflow
+name: Meu primeiro workflow
 #evento, ou seja, quando ele entra em execução
 on: workflow_dispatch
 
@@ -21,7 +21,10 @@ jobs:
         run: ls -a
       #quarto step
       - name: Até mais"
-        run: echo "See you, Github Actions!"
+        run: | 
+          echo "See you, Github Actions!"
+          echo "Bye!"
+          echo "Bye yet again"
       
       
   
